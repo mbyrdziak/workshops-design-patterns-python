@@ -9,10 +9,10 @@ class Archive(object):
 class ZipArchive(Archive):
 
     def read(self):
-        print("Reading files from zip archive")
+        print("Reading files from zip archive: " + self.location_path)
 
 
 class TarArchive(Archive):
 
     def read(self):
-        print("Reading files from tar archive")
+        print("Reading files from tar archive: " + self.location_path)
